@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-08-07 18:26:44 by Eclipse SUMO netedit Version 1.20.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="ElectricBus" length="12.00" minGap="2.50" maxSpeed="100.00" emissionClass="Energy" mass="10000.00" color="white" accel="1.0" decel="1.0" sigma="0.0">
+        <param key="airDragCoefficient" value="0.6"/>
+        <param key="constantPowerIntake" value="100"/>
+        <param key="device.battery.maximumChargeRate" value="15000"/>
+        <param key="frontSurfaceArea" value="5"/>
+        <param key="has.battery.device" value="true"/>
+        <param key="maximumPower" value="10000"/>
+        <param key="propulsionEfficiency" value="0.9"/>
+        <param key="radialDragCoefficient" value="0.5"/>
+        <param key="recuperationEfficiency" value="0.9"/>
+        <param key="rollDragCoefficient" value="0.01"/>
+        <param key="rotatingMass" value="100"/>
+        <param key="stoppingThreshold" value="0.1"/>
+    </vType>
+    <!-- Routes -->
+    <route id="electric" edges="A4A3 A3A2 A2B2 B2C2 C2C3 C3C4 C4B4 B4A4" repeat = "50" />
+    <route id="r_1" edges="B4A4 E0 E1 E2 A3A2"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <vehicle id="v_0" type="ElectricBus" depart="0.00" route="electric">
+	<param key="actualBatteryCapacity" value="15000"/>
+    </vehicle>
+    
+
+</routes>
